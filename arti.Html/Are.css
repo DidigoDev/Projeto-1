@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #000000; 
+    color: #ffffff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.books {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.books h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.books ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.books ul li {
+    margin-bottom: 10px;
+}
+
+.books ul li a {
+    font-size: 1.5em;
+    color: #7700ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.books ul li a:hover {
+    color: #05ffd5;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #777;
+}
+
+.github-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+body {
+    background-image: url('https://31.media.tumblr.com/c4c35890e9fc25dede0d99a025d48937/tumblr_n0e0zhCSFB1rikiwao1_500.gif');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-color: #f7f7f7;
+    padding: 50px;
+}
