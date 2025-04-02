@@ -1,21 +1,32 @@
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #000000;
-    color: #333;
+    background-color: var(--white);
+    color: var(--dark);
     text-align: center;
     padding: 20px;
 }
 
+:root {
+    --white: #fff;
+    --dark: #000;
+    --purple1: purple;
+    --purple2: rgb(83, 12, 83);
+}
+
+[data-theme="dark"] {
+    --white: #000;
+    --dark: #fff;
+}
+
 header {
-    background-color: #000000; 
-    color: #ffffff; 
+    background-color: var(--dark); 
+    color: var(--white); 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -32,7 +43,8 @@ header p {
 }
 
 .books {
-    background-color: #fff;
+    background-color: var(--white);
+    color: var(--dark);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -42,7 +54,6 @@ header p {
 .books h2 {
     font-size: 2em;
     margin-bottom: 15px;
-    color: #000000;
 }
 
 .books ul {
@@ -79,11 +90,39 @@ footer {
     vertical-align: middle;
 }
 
-body {
-    background-image: url('https://31.media.tumblr.com/c4c35890e9fc25dede0d99a025d48937/tumblr_n0e0zhCSFB1rikiwao1_500.gif');
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: 200px;
-    background-color: #f7f7f7;
-    padding: 50px;
+/* Estilo do botão de tema */
+#btn-dark-mode-toggle {
+    position: fixed;
+    top: 2px;
+    right: 8px;
+    background-color: rgb(43, 42, 42);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-dark-mode-toggle:hover {
+    background-color: rgb(61, 60, 60);
+    transition: 0.4s;
+}
+
+[data-theme="dark"] {
+    background-color: black;
+    color: white;
+}
+
+body{
+        background-image: url('https://31.media.tumblr.com/c4c35890e9fc25dede0d99a025d48937/tumblr_n0e0zhCSFB1rikiwao1_500.gif');
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-size: 180px;
+        background-color: #f7f7f7;
+        padding: 50px;
 }
