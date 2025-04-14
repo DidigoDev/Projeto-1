@@ -1,4 +1,140 @@
-{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f4f4f4; /* fundão*/
+    height: 100vh;
+    color: #333;
+}
+
+/* Cabeças */
+header {
+    background-color: #ffffff;
+    padding: 15px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+header .logo a {
+    display: inline-block;
+}
+
+header .logo img {
+    max-width: 200px; /* img da hello */
+    height: 80px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header nav ul li a {
+    color: rgb(34, 104, 255);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #1ed9f1; 
+}
+
+/* ESTILO DO BOTÃO DE CONTATO */
+.btn-contato a button {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #1e22ff; 
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-contato a button:hover {
+    background-color: #0077cc; 
+    transform: scale(1.1); 
+    box-shadow: 0 5px 15px rgba(30, 144, 255, 0.5);
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #1e90ff;
+    transform: scale(1.05);
+}
+
+/* Mano style da sec*/
+.inicio {
+    background-color: #ffffff; 
+    padding: 50px 4%; 
+    text-align: center; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px;
+}
+
+.inicio .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.inicio h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    overflow: hidden; /* Esconde texto */
+    border-right: .15em solid #333; /* linha piscas d*/
+    width: 0; 
+    white-space: nowrap; /* imp do quebras linhas*/
+    animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite; /* anima digit e piscas*/
+}
+
+/* digitass*/
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* piscass */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* SEÇÃO SOBRE */
+.inicio {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,7 +152,7 @@ body {
     --white: #fff;
     --dark: #000;
     --purple1: purple;
-    --purple2: rgb(83, 12, 83);
+    --purple2: rgb(83, 12, 83)
 }
 
 [data-theme="dark"] {
@@ -67,14 +203,16 @@ header p {
 
 .books ul li a {
     font-size: 1.5em;
-    color: #7700ff;
+    color:  #1e22ff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 
 .books ul li a:hover {
-    color: #05ffd5;
+    color:rgb(34, 104, 255);
 }
 
 footer {
@@ -119,7 +257,7 @@ footer {
 }
 
 body{
-        background-image: url('https://31.media.tumblr.com/c4c35890e9fc25dede0d99a025d48937/tumblr_n0e0zhCSFB1rikiwao1_500.gif');
+        background-image: url('');
         background-position: right bottom;
         background-repeat: no-repeat;
         background-size: 180px;
