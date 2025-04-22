@@ -5,9 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pro
   </title>
-  <link rel="stylesheet" href="CSS/Mi.css">
+  <link rel="stylesheet" href="Are.css">
+  <link href="https://fonts.cdnfonts.com/css/pixelify-sans" rel="stylesheet">
   <link rel="shortcut icon" href="https://img1.picmix.com/output/stamp/normal/6/8/0/2/2172086_89955.gif" type="image/x-icon">
 </head>
+<style>
+    @import url('https://fonts.cdnfonts.com/css/pixelify-sans');
+    </style>
 <body>
     <button id="btn-dark-mode-toggle">
         🌙
@@ -18,7 +22,7 @@
             <div class="interface">
                 <div class="logo">
                     <a href="HTMLAKE.png">
-                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bc47194c-4389-40b2-b130-e3de76db4ea0/dfk3vrs-63ff1093-ddfa-41d2-9de2-8dff7deb3834.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JjNDcxOTRjLTQzODktNDBiMi1iMTMwLWUzZGU3NmRiNGVhMFwvZGZrM3Zycy02M2ZmMTA5My1kZGZhLTQxZDItOWRlMi04ZGZmN2RlYjM4MzQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.S8aVU8-4IrQbXh5FD19ujVPKVs1yetRpa7s9LrBWSts" alt="Logo">
+                        <img src="https://www.codedex.io/images/code-eval/codedex-bot-logo-cropped.gif" alt="Logo">
                     </a>
                 </div>
                 <nav class="menu-desktop">
@@ -38,23 +42,53 @@
             </div>
         </header>
         <section class="books">
-            <h2>Livros Recomendados:</h2>
-            <ul>
-                <li><a href="file:///C:/Users/ALUNO%2025/Downloads/Como%20ser%20um%20Programador%20Melhor%20-%20um%20Manual%20Para%20Programadores%20que%20se%20Importam%20com%20C%C3%B3digo%20-%20Autor%20(Pete%20Goodliffe).pdf "target="_blank"">Como ser um
-                    programador
-                    melhor</a></li>
- <li><a href="https://drive.google.com/file/d/0B9eZlIWAs3-sN3NRbktQNVFUN3l2cTBBcXN4Y3FaUQ/view?resourcekey=0-ZafqCRtyIP8Zw0CKviW5Gw "target="_blank">Clean Code</a></li>
-<li><a href="https://www.kufunda.net/publicdocs/Entendendo%20Algoritmos%20Um%20guia%20ilustrado%20para%20programadores%20e%20outros%20curiosos%20(Aditya%20Y.%20Bhargava).pdf"target="_blank">Entendendo Algoritmos</a></li>
-<li><a href="https://www.kufunda.net/publicdocs/Fragmentos%20de%20um%20programador%20-%20Artigos%20e%20insights%20da%20carreira%20de%20um%20profissional%20(Casa%20do%20Codigo).pdf "target="_blank"">Fragmentos de um
-                  programador</a></li>
- <li><a href="file:///C:/Users/ALUNO%2025/Downloads/toaz.info-guia-front-end-o-caminho-das-pedras-para-ser-um-dev-front-end20191017-61598-1br9-pr_f01426938a58ea707faffe1d8419fc9c.pdf "target="_blank"">Guia Front-End</a></li>
- <li><a href="file:///C:/Users/ALUNO%2025/Downloads/toaz.info-introduao-a-programaao-e-aos-algoritmos-joao-araujo-ribeiro-pr_1aea661956aff7636ffe31c7ffc1014b.pdf "target="_blank"">Introdução À Programação e Aos Algoritmos </a></li>
-<li><a href="https://archive.org/details/logica-de-programacao-crie-seus-primeiros-programas-usando-javascript-e-html-pdfdrive "target="_blank"">Lógica de Programação</a></li>
- <li><a href="file:///C:/Users/ALUNO%2025/Downloads/toaz.info-o-codificador-limpo-pr_51790ca14d5607b590df8df983506541.pdf "target="_blank"">O codificador limpo</a></li>
+            <h2>Biblioteca</h2>
+
+  <div class="carousel-wrapper">
+    <button class="arrow left" id="btn-left">&#10094;</button>
+
+    <div class="carousel" id="carousel">
+      <!-- Livros -->
+      <a href="file:///C:/Users/User/Downloads/toaz.info-como-ser-um-programador-melhor-pete-goodliffe-pr_0cc6e70e6284b026c5a45fd647be8669.pdf" target="_blank" class="book">
+        <img src="https://m.media-amazon.com/images/I/71RWTuYLQiL._AC_UF1000,1000_QL80_.jpg" alt="Como ser um programador melhor">
+        <div class="book-title">Como ser um programador melhor</div>
+      </a>
+      <a href="https://drive.google.com/file/d/0B9eZlIWAs3-sN3NRbktQNVFUN3l2cTBBcXN4Y3FaUQ/view?resourcekey=0-ZafqCRtyIP8Zw0CKviW5Gw " target="_blank" class="book">
+        <img src="https://m.media-amazon.com/images/I/51E2055ZGUL.jpg" alt="Clean Code">
+        <div class="book-title">Clean Code</div>
+      </a>
+      <a href="https://www.kufunda.net/publicdocs/Entendendo%20Algoritmos%20Um%20guia%20ilustrado%20para%20programadores%20e%20outros%20curiosos%20(Aditya%20Y.%20Bhargava).pdf" target="_blank" class="book">
+        <img src="https://m.media-amazon.com/images/I/71Vkg7GfPFL.jpg" alt="Entendendo Algoritmos">
+        <div class="book-title">Entendendo Algoritmos</div>
+      </a>
+      <a href="https://www.kufunda.net/publicdocs/Fragmentos%20de%20um%20programador%20-%20Artigos%20e%20insights%20da%20carreira%20de%20um%20profissional%20(Casa%20do%20Codigo).pdf" target="_blank" class="book">
+        <img src="https://m.media-amazon.com/images/I/71+cr+hOhCL._UF894,1000_QL80_.jpg" alt="Fragmentos de um programador">
+        <div class="book-title">Fragmentos de um programador</div>
+      </a>
+      <a href="file:///C:/Users/User/Downloads/toaz.info-guia-front-end-o-caminho-das-pedras-para-ser-um-dev-front-end20191017-61598-1br9-pr_9e93af84ae2929438343edb74b18f84a.pdf" target="_blank" class="book">
+        <img src="https://www.casadocodigo.com.br/cdn/shop/products/GuiaFront-End_ebook_large.jpg?v=1631721284" alt="Guia Front-End">
+        <div class="book-title">Guia Front-End</div>
+      </a>
+      <a href="file:///C:/Users/User/Downloads/toaz.info-introduao-a-programaao-e-aos-algoritmos-joao-araujo-ribeiro-pr_6746a770b82673e6f2f9b634bff6aba1.pdf " target="_blank" class="book">
+        <img src="https://www.grupogen.com.br/media/catalog/product/9/7/9788521636403.png?optimize=low&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:" alt="Introdução À Programação e Aos Algoritmos">
+        <div class="book-title">Introdução À Programação e Aos Algoritmos</div>
+      </a>
+      <a href="file:///C:/Users/User/Downloads/Lógica%20de%20Programação%20Crie%20seus%20primeiros%20programas%20usando%20Javascript%20e%20HTML%20(%20PDFDrive%20).pdf" target="_blank" class="book">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg9CBVi5k-dDpO1IAWDtwYMfoPHgefLxL0Yw&s" alt="Lógica de Programação">
+        <div class="book-title">Lógica de Programação</div>
+      </a>
+      <a href="file:///C:/Users/User/Downloads/toaz.info-o-codificador-limpo-pr_9ef2d9d3b4bf0cabc7465c01d787d96f.pdf" target="_blank" class="book">
+        <img src="https://m.media-amazon.com/images/I/91lBONZ4tAL._AC_UF1000,1000_QL80_.jpg" alt="O codificador limpo">
+        <div class="book-title">O codificador limpo</div>
+      </a>
+    </div>
+
+    <button class="arrow right" id="btn-right">&#10095;</button>
+  </div>
 
                     <br>
                     <hr>
-                    <h1>Gostaram dos livros? Que tal explorar também alguns documentários sobre programação e computadores?</h1>
+                    <h1 id="typed-heading"></h1>
                     <hr>
                     <br>
                     <h2><i>O triunfo dos Nerds(1996)</i></h2>
