@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Pixelify Sans', sans-serif;;
+    font-family: 'Pixelify Sans', sans-serif;
 }
 
 body {
@@ -43,14 +43,14 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #5025d1;
+    color: #ed145b;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: #b39ef3;
+    color: #f177a0;
 }
 
 /* ESTILO DO BOTÃO DE CONTATO */
@@ -58,7 +58,7 @@ header nav ul li a:hover {
     padding: 12px 30px;
     font-size: 16px;
     font-weight: 600;
-    background-color: #5025d1; 
+    background-color: #ed145b;
     color: white;
     border: none;
     border-radius: 30px;
@@ -67,9 +67,9 @@ header nav ul li a:hover {
 }
 
 .btn-contato a button:hover {
-    background-color: #b39ef3; 
+    background-color: #9c2b51;
     transform: scale(1.1); 
-    box-shadow: 0 5px 15px rgba(30, 144, 255, 0.5);
+    box-shadow: 0 5px 15px rgb(255, 0, 255);
 }
 
 header a {
@@ -150,18 +150,18 @@ body {
 
 :root {
     --white: #fff;
-    --dark: #000;
+    --dark: rgb(14, 13, 13);
     --purple1: purple;
     --purple2: rgb(83, 12, 83)
 }
 
 [data-theme="dark"] {
-    --white: #000;
+    --white: rgb(14, 13, 13);
     --dark: #fff;
 }
 
 header {
-    background-color: var(--dark); 
+    background-color: black; 
     color: var(--white); 
     padding: 20px;
     border-radius: 10px;
