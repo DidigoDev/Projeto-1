@@ -35,3 +35,37 @@ function defineCurrentTheme(theme) {
         `;
     }
 }
+const carousel = document.getElementById('carousel');
+const btnLeft = document.getElementById('btn-left');
+const btnRight = document.getElementById('btn-right');
+
+// Quantidade de rolagem (ajuste se quiser rolar mais ou menos)
+const scrollAmount = 300;
+
+btnLeft.addEventListener('click', () => {
+  carousel.scrollBy({
+    left: -scrollAmount,
+    behavior: 'smooth'
+  });
+});
+
+btnRight.addEventListener('click', () => {
+  carousel.scrollBy({
+    left: scrollAmount,
+    behavior: 'smooth'
+  });
+});
+const headingText = "Gostaram dos livros? Que tal explorar também alguns documentários sobre programação e computadores?";
+const typedHeading = document.getElementById("typed-heading");
+
+let i = 0;
+
+function typeHeading() {
+  if (i < headingText.length) {
+    typedHeading.textContent += headingText.charAt(i);
+    i++;
+    setTimeout(typeHeading, 40); // Ajuste a velocidade aqui se quiser
+  }
+}
+
+typeHeading();
