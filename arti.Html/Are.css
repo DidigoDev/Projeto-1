@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;;
 }
 
 body {
@@ -43,14 +43,14 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: rgb(34, 104, 255);
+    color: #5025d1;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: #1ed9f1; 
+    color: #b39ef3;
 }
 
 /* ESTILO DO BOTÃO DE CONTATO */
@@ -58,7 +58,7 @@ header nav ul li a:hover {
     padding: 12px 30px;
     font-size: 16px;
     font-weight: 600;
-    background-color: #1e22ff; 
+    background-color: #5025d1; 
     color: white;
     border: none;
     border-radius: 30px;
@@ -67,7 +67,7 @@ header nav ul li a:hover {
 }
 
 .btn-contato a button:hover {
-    background-color: #0077cc; 
+    background-color: #b39ef3; 
     transform: scale(1.1); 
     box-shadow: 0 5px 15px rgba(30, 144, 255, 0.5);
 }
@@ -264,3 +264,94 @@ body{
         background-color: #f7f7f7;
         padding: 50px;
 }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .carousel-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .book {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 150px;
+    background: white;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s ease;
+  }
+  
+  .book:hover {
+    transform: scale(1.05);
+  }
+  
+  .book img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .book-title {
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 2;
+  }
+  
+  .arrow.left {
+    left: 5px;
+  }
+  
+  .arrow.right {
+    right: 5px;
+  }
+  #typed-heading::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+    color: black;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
