@@ -43,7 +43,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #ed145b;
+    color: #a41dce;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
@@ -58,7 +58,7 @@ header nav ul li a:hover {
     padding: 12px 30px;
     font-size: 16px;
     font-weight: 600;
-    background-color: #ed145b;
+    background-color: #7200f5;
     color: white;
     border: none;
     border-radius: 30px;
@@ -354,4 +354,162 @@ body {
   @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
+  }
+
+  body {
+    background: #0a0a0a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fce4e4;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-shadow: 0 0 10px #d54dff;
+    text-align: center;
+}
+
+.video-card {
+    border: 1px solid #8c00ff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px #ffffff;
+}
+.scroll-fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.scroll-fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+details {
+    margin-top: 10px;
+    background-color: #000000;
+    border-left: 3px solid #8c00ff;
+    padding: 10px;
+    border-radius: 10px;
+    color: #f8c7c7;
+}
+
+hr {
+    border: 1px solid #ffffff;
+}
+.curso-novo {
+    position: relative;
+    background: linear-gradient(120deg, #111, #222);
+    padding: 120px 20px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  #curso-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .curso-container {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 1s ease-out;
+    z-index: 1;
+  }
+  
+  .curso-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .curso-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    padding: 50px;
+    max-width: 700px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+  }
+  
+  .curso-glow {
+    position: absolute;
+    top: -60%;
+    left: -50%;
+    width: 220%;
+    height: 220%;
+    background: radial-gradient(circle, #ff0066, #6600ff, transparent 70%);
+    animation: rotateGlow 10s linear infinite;
+    z-index: 0;
+    opacity: 0.25;
+  }
+  
+  @keyframes rotateGlow {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .curso-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+  }
+  
+  .curso-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .curso-content p {
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+    color: #ccc;
+  }
+  
+  .curso-btn {
+    position: relative;
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    color: white;
+    background: #8c00ff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: transform 0.3s ease;
+  }
+  
+  .curso-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .curso-btn-light {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, white, transparent 50%);
+    animation: pulse 4s infinite ease-in-out;
+    z-index: 0;
+    opacity: 0.2;
+  }
+  
+  @keyframes pulse {
+    0%, 100% { transform: scale(0.8); opacity: 0.2; }
+    50% { transform: scale(1.1); opacity: 0.4; }
   }
